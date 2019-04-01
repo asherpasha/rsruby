@@ -60,8 +60,8 @@
 # define CleanEd Rf_CleanEd
 extern void CleanEd(void);
 extern int R_CollectWarnings; 
-# define PrintWarnings Rf_PrintWarnings
-extern void PrintWarnings(void);
+# define PrintWarnings() ; // NOTE: Rf_PrintWarnings removed in R 3.x
+extern void PrintWarnings();
 
 void Init_rsruby();
 
